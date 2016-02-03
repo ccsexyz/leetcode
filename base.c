@@ -12,6 +12,9 @@ struct ListNode {
      struct ListNode *next;
 };
 
+#define true 1
+#define false 0
+
 void printList(struct ListNode *head) {
     int i = 0;
     while(head) {
