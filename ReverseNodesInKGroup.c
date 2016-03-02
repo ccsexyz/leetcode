@@ -1,13 +1,4 @@
-/*
- * https://leetcode.com/problems/swap-nodes-in-pairs/
- */
-
-#include <stdio.h>
-
-struct ListNode {
-     int val;
-     struct ListNode *next;
-};
+// https://leetcode.com/problems/reverse-nodes-in-k-group/
 
 /**
  * Definition for singly-linked list.
@@ -16,32 +7,7 @@ struct ListNode {
  *     struct ListNode *next;
  * };
  */
-struct ListNode* swapPairs(struct ListNode* head) {
-    if(head == NULL || head->next == NULL)
-        return head;
-
-    struct ListNode *p = head;
-    struct ListNode *pnext = p->next;
-
-    int val = p->val;
-    p->val = pnext->val;
-    pnext->val = val;
-
-    if(pnext->next != NULL) {
-        swapPairs(pnext->next);
-    }
-    return head;
-}
-
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-struct ListNode* swapPairs(struct ListNode* head) {
-    int k = 2;
+struct ListNode* reverseKGroup(struct ListNode* head, int k) {
     if(k == 0 || head == NULL || k == 1) return head;
 
     struct ListNode *ret = head;
