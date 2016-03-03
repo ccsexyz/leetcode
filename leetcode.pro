@@ -26,4 +26,16 @@ SOURCES += main.c \
     StringToInteger.c \
     SwapNodesInPairs.c \
     InsertionSortList.c \
-    CopyListWithRandomPointer.c
+    CopyListWithRandomPointer.c \
+    BinaryTreeInorderTraversal.c \
+    BinaryTreePostorderTravesal.c \
+    BinaryTreePreorderTraversal.c \
+    ImplementQueueUsingStacks.c \
+    ImplementStackUsingQueues.c \
+    LinkedListCycleII.c \
+    PartitionList.c \
+    PascalTriangle.c \
+    ReorderList.c \
+    ReverseNodesInKGroup.c \
+    ValidParentheses.c \
+    flattenbinarytreetolinkedlist.c
